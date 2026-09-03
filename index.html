@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mausam - Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="weather-card">
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." value="Lucknow">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div class="error-msg" id="errorMsg">City not found. Try again.</div>
+
+    <div class="weather-body" id="weatherBody">
+      <div class="city-name" id="cityName">Lucknow, IN</div>
+      <div class="weather-desc" id="weatherDesc">Clear Sky</div>
+      <div class="temp-display" id="tempDisplay">29°C</div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-label">Wind Speed</div>
+          <div class="stat-value" id="windSpeed">12 km/h</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Humidity</div>
+          <div class="stat-value" id="humidity">68%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
